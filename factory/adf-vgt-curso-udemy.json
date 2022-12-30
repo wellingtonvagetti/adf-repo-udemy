@@ -1,0 +1,9 @@
+{
+	"name": "adf-vgt-curso-udemy",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "925a9ec2-86ab-41b5-8375-b1a78929d784",
+		"tenantId": "f9a807dd-535c-4672-b63b-4e3b809fdd0b"
+	}
+}
