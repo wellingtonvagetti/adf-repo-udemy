@@ -1,0 +1,22 @@
+{
+	"name": "ls_mysql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"dbName": {
+				"type": "String",
+				"defaultValue": "sakila"
+			}
+		},
+		"annotations": [],
+		"type": "MySql",
+		"typeProperties": {
+			"connectionString": "server=VM-SRVSQL;port=3306;database=@{linkedService().dbName};user=root;sslmode=1;usesystemtruststore=0",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1NjhmODAyOC01YjI1LTRiMzktYTE3Yi0wMDAwNmUwYzYyZGEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "ir-selfhosted-azure",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
