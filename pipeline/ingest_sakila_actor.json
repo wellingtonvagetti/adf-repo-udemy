@@ -99,7 +99,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "bronze",
-							"folder": "sakila/actor",
+							"folder": {
+								"value": "@sakila/actor/dtIngestion=@(utcNow('yyyyMMdd'))",
+								"type": "Expression"
+							},
 							"file": "file.parquet"
 						}
 					}
