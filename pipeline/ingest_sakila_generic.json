@@ -56,10 +56,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "bronze",
-							"folder": {
-								"value": "@concat('sakila/',pipeline().parameters.tbName,'/dtIngestion=', formatDateTime(utcnow(), 'yyyyMMdd'))",
-								"type": "Expression"
-							},
+							"folder": "sakila/@{pipeline().parameters.tbName}/dtIngestion=@{utcnow('yyyyMMdd')}",
 							"file": "file.parquet"
 						}
 					}
