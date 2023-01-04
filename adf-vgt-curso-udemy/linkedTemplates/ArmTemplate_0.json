@@ -355,7 +355,7 @@
 								"parameters": {
 									"container": "bronze",
 									"folder": {
-										"value": "@concat('sakila/(@pipeline().parameters.tbName)/dtIngestion=', formatDateTime(utcnow(), 'yyyyMMdd'))",
+										"value": "@concat('sakila/',pipeline().parameters.tbName,'/dtIngestion=', formatDateTime(utcnow(), 'yyyyMMdd'))",
 										"type": "Expression"
 									},
 									"file": "file.parquet"
@@ -370,8 +370,7 @@
 				},
 				"parameters": {
 					"tbName": {
-						"type": "string",
-						"defaultValue": "address"
+						"type": "string"
 					}
 				},
 				"annotations": []
