@@ -100,7 +100,7 @@
 						"parameters": {
 							"container": "bronze",
 							"folder": {
-								"value": "@concat('sakila/actor/dtIngestion=', formatDateTime(utcnow(), 'yyyy-dd-MM'))",
+								"value": "@concat('sakila/actor/dtIngestion=', formatDateTime(utcnow(), 'yyyyddMM'))",
 								"type": "Expression"
 							},
 							"file": "file.parquet"
