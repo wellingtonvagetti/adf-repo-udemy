@@ -59,7 +59,8 @@
 							"folder": {
 								"value": "@concat('sakila/@pipeline().parameters.tbName/dtIngestion=', formatDateTime(utcnow(), 'yyyyMMdd'))",
 								"type": "Expression"
-							}
+							},
+							"file": "file.parquet"
 						}
 					}
 				]
