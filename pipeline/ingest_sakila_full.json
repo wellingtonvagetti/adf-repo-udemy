@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
+				"name": "ForEach",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": [],
@@ -12,6 +12,7 @@
 						"value": "@variables('tableList')",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"batchCount": 4,
 					"activities": [
 						{
