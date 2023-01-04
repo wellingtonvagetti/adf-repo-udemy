@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-vgt-curso-udemy"
+		},
+		"ls_adls_udemy_servicePrincipalCredential": {
+			"value": ""
+		},
+		"ls_mysql_connectionString": {
+			"value": ""
+		},
+		"ls_adls_udemy_properties_typeProperties_url": {
+			"value": "https://stodfvagetti.dfs.core.windows.net/"
+		},
+		"ls_adls_udemy_properties_typeProperties_tenant": {
+			"value": "f9a807dd-535c-4672-b63b-4e3b809fdd0b"
+		},
+		"ls_adls_udemy_properties_typeProperties_servicePrincipalId": {
+			"value": "bd902dd9-cc1f-4896-a1c4-72c030f9c7a4"
+		}
+	}
+}
