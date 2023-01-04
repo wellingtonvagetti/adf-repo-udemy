@@ -68,8 +68,7 @@
 		],
 		"parameters": {
 			"tbName": {
-				"type": "string",
-				"defaultValue": "address"
+				"type": "string"
 			}
 		},
 		"annotations": []
