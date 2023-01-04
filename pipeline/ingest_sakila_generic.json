@@ -57,7 +57,7 @@
 						"parameters": {
 							"container": "bronze",
 							"folder": {
-								"value": "@concat('sakila/',pipeline().parameters.tbName)",
+								"value": "sakila/(@pipeline().parameters.tbName)/dtIngestion=@(utcnow('yyyyMMdd'))",
 								"type": "Expression"
 							},
 							"file": "file.parquet"
